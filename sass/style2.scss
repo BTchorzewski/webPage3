@@ -1,0 +1,157 @@
+$text-color-main: #cccccc;
+$text-color-main-darker: #777777;
+$text-color-main-darkest: #555555;
+$button-color-green: #7cc576;
+body {
+    background-color: antiquewhite;
+
+    section {
+        width: 100%;
+    }
+}
+a {
+    text-decoration: none;
+}
+.upperLetters {
+    text-transform: uppercase;
+}
+.greenButton {
+    background-color: #7cc576;
+    color: #ffffff;
+    width: 170px;
+    height: 60px;
+    border: 1px solid #7cc576;
+    border-radius: 25px 25px 30px 30px;
+    font-size: 14px;
+}
+.wrapper {
+    max-width: 1400px;
+    min-width: 900px;
+    height: auto;
+    background-color: white;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;;
+    .headerLogo {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        height: 50px;
+        width: 300px;
+        margin: 0 0 0 100px;
+        padding: 5px;
+
+        p{
+            color: $text-color-main-darkest;
+            font-size: 26px;
+            text-transform: uppercase;
+        }
+
+        img {
+            margin: 0 20px 0 0;
+        }
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 500px;
+        height:  50px;
+        margin: 0 20px 0 0 0;
+            a {
+                color: $text-color-main-darker;
+                text-transform: uppercase;
+        }
+    }
+
+
+};
+
+.section1{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    height: 530px;
+    background-color:black;
+    position: relative;
+
+    h1 {
+        color: $text-color-main;
+        margin: 120px 0 0 0;
+        width: 500px;
+        font-size: 44px;
+        text-align: center;
+    }
+
+    p {
+        color: $text-color-main-darker;
+        margin: 45px 0 60px 0;
+    }
+
+    button {
+
+    }
+
+}
+
+///Opacity of background image
+
+/*.section1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/background1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.4;
+}*/
+
+
+.section2 {
+    height: 534px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    .sectionServices {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: baseline;
+        width: 80%;
+        margin: 20px 0 0 0;
+
+
+        article {
+            width: 270px;
+            height: 200px;
+            text-align: center;
+            margin: 50px 0 0 0;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
