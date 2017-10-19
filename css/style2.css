@@ -2,9 +2,10 @@ body {
   background-color: antiquewhite; }
   body section {
     width: 100%; }
-
-a {
-  text-decoration: none; }
+  body a {
+    text-decoration: none; }
+  body ul, body li {
+    list-style: none; }
 
 .upperLetters {
   text-transform: uppercase; }
@@ -17,6 +18,18 @@ a {
   border: 1px solid #7cc576;
   border-radius: 25px 25px 30px 30px;
   font-size: 14px; }
+
+.sectionTitle {
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  height: auto;
+  margin: 130px 0 5px 0; }
+
+.titleInforamtion {
+  text-align: center;
+  color: #777777;
+  margin: 10px 0 0 0; }
 
 .wrapper {
   max-width: 1400px;
@@ -88,7 +101,7 @@ header {
     opacity: 0.4;
 }*/
 .section2 {
-  height: 534px;
+  height: 535px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -99,9 +112,126 @@ header {
     justify-content: space-around;
     align-items: baseline;
     width: 80%;
-    margin: 20px 0 0 0; }
+    margin: 0 0 0 0; }
     .section2 .sectionServices article {
       width: 270px;
       height: 200px;
       text-align: center;
+      margin: 50px 0 0 0; }
+
+.section3 {
+  height: 500px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: black;
+  background: url(../images/gear.png) no-repeat left; }
+  .section3 article {
+    width: 70%;
+    background: url(../images/background2.jpg) no-repeat 0 0;
+    background-size: cover;
+    color: #777777;
+    padding: 0 0 0 0; }
+    .section3 article h2 {
+      color: #fff;
+      text-transform: uppercase;
+      margin: 50px 0 0 60px; }
+      .section3 article h2 span {
+        color: #7cc576; }
+    .section3 article p {
+      margin: 50px 0 0 60px; }
+    .section3 article ul {
+      list-style: none;
+      margin: 50px 0 50px 60px; }
+      .section3 article ul li {
+        background: url(../images/footerIcons1.png) no-repeat 0 0;
+        margin: 20px 0 0 -35px;
+        padding: 0 0 0 35px; }
+    .section3 article button {
+      margin: 0 0 0 60px; }
+
+.section4 {
+  height: 800px;
+  background: url(../images/latestProjectTablet.png) no-repeat right center; }
+  .section4 article {
+    width: 430px;
+    margin: 100px 0 0 220px; }
+    .section4 article ul {
+      margin: 0 0 0 -40px; }
+      .section4 article ul li {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0 0 20px 0; }
+        .section4 article ul li img {
+          width: 60px;
+          height: 60px;
+          margin: 0 20px 0 0; }
+        .section4 article ul li span {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          padding: 0 0 0 0; }
+          .section4 article ul li span h5 {
+            margin: 0; }
+          .section4 article ul li span p {
+            margin: 0; }
+
+.section5 {
+  height: 800px;
+  box-sizing: border-box;
+  background-color: aqua;
+  padding: 30px 0 0 0; }
+  .section5 div {
+    display: flex;
+    justify-content: space-around;
+    margin: 100px 0 0 0; }
+    .section5 div article {
+      width: 300px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 0 0 0 0; }
+
+.section6 {
+  height: 845px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fafafa; }
+  .section6 p {
+    margin: 0 0 140px 0; }
+  .section6 article {
+    width: 560px;
+    height: 110px; }
+    .section6 article .quote {
+      color: #555555;
+      margin: 0 0 0 0; }
+    .section6 article .quoteAuthor {
+      color: #7cc576;
+      margin: 10px 0 0 0; }
+  .section6 .rightArticle {
+    align-self: flex-end;
+    margin: 0 300px 60px 0; }
+  .section6 .leftArticle {
+    align-self: flex-start;
+    margin: 60px 0 0 300px; }
+
+.section7 {
+  height: 240px;
+  background-color: #7cc576;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; }
+  .section7 h1 {
+    color: #fff;
+    text-transform: uppercase; }
+  .section7 a {
+    width: 184px;
+    height: 50px;
+    border: solid 3px #fff;
+    margin: 50px 0 0 0;
+    text-align: center; }
+    .section7 a span {
       margin: 50px 0 0 0; }
