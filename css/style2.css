@@ -235,3 +235,44 @@ header {
     text-align: center; }
     .section7 a span {
       margin: 50px 0 0 0; }
+
+.section8 {
+  min-height: 160px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; }
+  .section8 a {
+    height: 40px;
+    width: auto;
+    margin: 0 10px; }
+
+.section9 {
+  height: 365px;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .section9 article {
+    width: 325px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+    .section9 article ul li img {
+      width: 7.69231%;
+      height: auto;
+      margin: 0 10px 0 0;
+      float: left; }
+    .section9 article ul li p {
+      width: 61.53846%; }
+
+.section10 {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .section10 .copyrights {
+    display: inline; }
+  .section10 a {
+    margin: 5px; }
