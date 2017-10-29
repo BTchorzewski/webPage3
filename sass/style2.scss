@@ -102,11 +102,20 @@ header {
     align-items: center;
     flex-direction: column;
     height: 530px;
-    background-color:black;
-    position: relative;
+     /*
+    transparent background!!!!!!!!!!!!!!!!! IMPORTANT!
+
+    box-shadow create opacity layer on the image
+    */
+    ///Opacity of background image
+    background-image: url(../images/background1.jpg);
+    background-repeat: no-repeat;
+
+
+    box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
 
     h1 {
-        color: $text-color-main;
+        color: $title-color-white;
         margin: 120px 0 0 0;
         width: 500px;
         font-size: 44px;
@@ -124,24 +133,10 @@ header {
 
 }
 
-///Opacity of background image
-
-/*.section1::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    background-image: url(../images/background1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.4;
-}*/
 
 
+
+// proffessional service section
 .section2 {
     height: 535px;
     display: flex;
@@ -168,16 +163,29 @@ header {
     }
 }
 
+//just relax section
 .section3 {
-    height: 500px;
+
+    min-height: 615px;
     display: flex;
     justify-content: flex-end;
-    background-color: black;
-    background: url(../images/gear.png) no-repeat left;
+    background-color: #e9e9e9;
+
+    /*
+    don't know why background property is not working. I had used background-image property instead background property and gear image appered.
+    */
+    background-image: url(../images/gear.png);
+    background-repeat: no-repeat;
+    background-size: 387px 414px;
+    background-position: 15%;
+
+
+
 
     article {
-        width: 70%;
+        width: 75%;
         background: url(../images/background2.jpg) no-repeat 0 0;
+        box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
         background-size: cover;
         color: $text-color-main-darker;
         padding: 0 0 0 0;
@@ -193,6 +201,7 @@ header {
         }
 
         p{
+            width: 490px;
             margin: 50px 0 0 60px;
         }
 
@@ -215,6 +224,7 @@ header {
     }
 }
 
+//latest project section
 .section4 {
         height: 800px;
         background: url(../images/latestProjectTablet.png) no-repeat right center;
@@ -260,6 +270,7 @@ header {
 
 }
 
+//culture and values section
 .section5 {
     height: 800px;
     box-sizing: border-box;
@@ -298,20 +309,21 @@ header {
 
 }
 
+//OUR AWESOME CLIENTS section
 .section6 {
 
-    height: 845px;
+    height: 720px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fafafa;
     p {
-        margin: 0 0 140px 0;
+        margin: 0 0 100px 0;
     }
 
     article {
-        width: 560px;
-        height: 110px;
+        width: 500px;
+        height: 90px;
 
         .quote {
             color:$text-color-main-darkest;
@@ -326,17 +338,19 @@ header {
 
     .rightArticle {
         align-self: flex-end;
-        margin: 0 300px 60px 0;
+        margin: 0 300px 30px 0;
     }
 
     .leftArticle {
         align-self: flex-start;
-        margin: 60px 0 0 300px;
+        margin: 30px 0 0 300px;
     }
 
 
 }
 
+
+//READY TO TALK ABOUT YOUR NEXT PROJECT?
 .section7 {
     height: 240px;
     background-color: $button-color-green;
@@ -348,21 +362,22 @@ header {
         color: $title-color-white;
         text-transform: uppercase;
     }
-    
+
     a {
-        
+
         width: 184px;
         height: 50px;
         border: solid 3px $title-color-white;
         margin: 50px 0 0 0;
         text-align: center;
-        
+
         span {
             margin: 50px 0 0 0;
-            
+
         }
     }
 }
+
 
 .section8 {
     min-height: 160px;
@@ -370,65 +385,67 @@ header {
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
-    
+
     a {
         height: 40px;
         width: auto;
         margin: 0 10px;
-        
+
         img {
-            
-            
+
+
         }
     }
-    
+
 }
+
 
 .section9 {
     height: 365px;
     background-color: black;
     color:white;
-    
+
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    
+
     article {
         width: 325px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        
+
         h4 {
-            
+
         }
-        
+
         ul {
-            
+
             li{
-                
-                
-                
+
+
+
                 img {
                     width: 25/325 *100%;
                     height: auto;
                     margin: 0 10px 0 0;
-                    float: left;   
+                    float: left;
                 }
-                
+
                 p {
                     width: 200/325 *100%;
-                
+
                 }
             }
-            
+
         }
-        
-        
+
+
     }
-    
-    
+
+
 }
+
 
 .section10 {
     height: 100px;
@@ -436,9 +453,9 @@ header {
     justify-content: center;
     align-items: center;
     .copyrights {
-        margin 0 500px 0 0;
+        margin: 0 500px 0 0;
     }
-    
+
     a {
         margin: 5px;
     }
