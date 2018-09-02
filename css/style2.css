@@ -1,23 +1,28 @@
 body {
-  background-color: antiquewhite; }
+  background-color: antiquewhite;
+  font-family: 'Roboto Slab', serif; }
   body section {
     width: 100%; }
-  body a {
-    text-decoration: none; }
-  body ul, body li {
+  body li {
     list-style: none; }
 
 .upperLetters {
   text-transform: uppercase; }
 
 .greenButton {
-  background-color: #7cc576;
-  color: #ffffff;
-  width: 170px;
+  width: 200px;
   height: 60px;
-  border: 1px solid #7cc576;
-  border-radius: 25px 25px 30px 30px;
-  font-size: 14px; }
+  border-radius: 30px;
+  background-color: #7bc575;
+  font-size: 20px;
+  font-size: 15px;
+  letter-spacing: 0px;
+  line-height: 43px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); }
 
 .sectionTitle {
   font-size: 30px;
@@ -33,7 +38,7 @@ body {
 
 .wrapper {
   max-width: 1400px;
-  min-width: 900px;
+  min-width: 700px;
   height: auto;
   background-color: white;
   margin: 0 auto; }
@@ -51,22 +56,34 @@ header {
     width: 300px;
     margin: 0 0 0 100px;
     padding: 5px; }
-    header .headerLogo p {
+    header .headerLogo .headerLogo__text {
+      font-size: 18px;
+      letter-spacing: 0px;
+      line-height: 41px;
       color: #555555;
-      font-size: 26px;
-      text-transform: uppercase; }
-    header .headerLogo img {
-      margin: 0 20px 0 0; }
-  header nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 500px;
-    height: 50px;
-    margin: 0 20px 0 0 0; }
-    header nav a {
-      color: #777777;
-      text-transform: uppercase; }
+      font-family: "Montserrat";
+      font-weight: bold;
+      text-transform: uppercase;
+      text-decoration: none; }
+    header .headerLogo .headerLogo__image {
+      margin: 0 5px 0 0;
+      width: 28px;
+      height: 28px; }
+    header .headerLogo .navigation {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      max-width: 700px;
+      height: 50px;
+      margin: 0 80px 0 0 0; }
+      header .headerLogo .navigation .navElement {
+        text-decoration: none;
+        font-size: 14px;
+        line-height: 41px;
+        color: red;
+        font-family: "Montserrat";
+        text-align: center;
+        margin: 0 60px 0 0; }
 
 .section1 {
   display: flex;
@@ -85,7 +102,7 @@ header {
   .section1 h1 {
     color: #fff;
     margin: 120px 0 0 0;
-    width: 500px;
+    max-width: 500px;
     font-size: 44px;
     text-align: center; }
   .section1 p {
@@ -137,7 +154,7 @@ header {
       .section3 article h2 span {
         color: #7cc576; }
     .section3 article p {
-      width: 490px;
+      width: 60%;
       margin: 50px 0 0 60px; }
     .section3 article ul {
       list-style: none;
@@ -153,7 +170,7 @@ header {
   height: 800px;
   background: url(../images/latestProjectTablet.png) no-repeat right center; }
   .section4 article {
-    width: 430px;
+    width: 30.71%;
     margin: 100px 0 0 220px; }
     .section4 article ul {
       margin: 0 0 0 -40px; }
@@ -186,7 +203,7 @@ header {
     justify-content: space-around;
     margin: 100px 0 0 0; }
     .section5 div article {
-      width: 300px;
+      width: 21.42%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -202,7 +219,7 @@ header {
   .section6 p {
     margin: 0 0 100px 0; }
   .section6 article {
-    width: 500px;
+    width: 35.71%;
     height: 90px; }
     .section6 article .quote {
       color: #555555;
@@ -226,15 +243,8 @@ header {
   justify-content: flex-start; }
   .section7 h1 {
     color: #fff;
-    text-transform: uppercase; }
-  .section7 a {
-    width: 184px;
-    height: 50px;
-    border: solid 3px #fff;
-    margin: 50px 0 0 0;
-    text-align: center; }
-    .section7 a span {
-      margin: 50px 0 0 0; }
+    text-transform: uppercase;
+    margin: 25px; }
 
 .section8 {
   min-height: 160px;
@@ -245,7 +255,7 @@ header {
   .section8 a {
     height: 40px;
     width: auto;
-    margin: 0 10px; }
+    margin: 0 20px; }
 
 .section9 {
   height: 365px;

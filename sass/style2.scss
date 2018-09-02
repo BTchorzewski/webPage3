@@ -1,506 +1,372 @@
-$text-color-main: #cccccc;
-$text-color-main-darker: #777777;
-$text-color-main-darkest: #555555;
-$text-color-green: #7cc679;
-$title-color-white: #fff;
-$button-color-green: #7cc576;
-body {
-    background-color: antiquewhite;
-
-    section {
-        width: 100%;
-    }
-
-    a {
-        text-decoration: none;
-    }
-
-    ul, li {
-        list-style: none;
-    }
-
-}
-
-.upperLetters {
-    text-transform: uppercase;
-}
-.greenButton {
-    background-color: $button-color-green;
-    color: #ffffff;
-    width: 170px;
-    height: 60px;
-    border: 1px solid #7cc576;
-    border-radius: 25px 25px 30px 30px;
-    font-size: 14px;
-}
-
-.sectionTitle {
-    font-size: 30px;
-    text-align: center;
-    text-transform: uppercase;
-    height: auto;
-    margin: 130px 0 5px 0;
-}
-
-.titleInforamtion {
-    text-align: center;
-    color: $text-color-main-darker;
-    margin: 10px 0 0 0;
-}
-.wrapper {
-    max-width: 1400px;
-    min-width: 900px;
-    height: auto;
-    background-color: white;
-    margin: 0 auto;
-}
-
-header {
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;;
-    .headerLogo {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        height: 50px;
-        width: 300px;
-        margin: 0 0 0 100px;
-        padding: 5px;
-
-        p{
-            color: $text-color-main-darkest;
-            font-size: 26px;
-            text-transform: uppercase;
+    $text-color-main: #cccccc;
+    $text-color-main-darker: #777777;
+    $text-color-main-darkest: #555555;
+    $text-color-green: #7cc679;
+    $title-color-white: #fff;
+    $button-color-green: #7cc576;
+    $main-font:'Roboto Slab',
+    serif;
+    body {
+        background-color: antiquewhite;
+        font-family: 'Roboto Slab', serif;
+        section {
+            width: 100%;
         }
-
-        img {
-            margin: 0 20px 0 0;
+        li {
+            list-style: none;
         }
     }
-
-    nav {
+    
+    .upperLetters {
+        text-transform: uppercase;
+    }
+    
+    .greenButton {
+        width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        background-color: #7bc575;
+        font-size: 20px;
+        font-size: 15px;
+        letter-spacing: 0px;
+        line-height: 43px;
+        color: #ffffff;
+        font-family: "Montserrat";
+        font-weight: bold;
+        text-align: center;
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+    
+    .sectionTitle {
+        font-size: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        height: auto;
+        margin: 130px 0 5px 0;
+    }
+    
+    .titleInforamtion {
+        text-align: center;
+        color: $text-color-main-darker;
+        margin: 10px 0 0 0;
+    }
+    
+    .wrapper {
+        max-width: 1400px;
+        min-width: 700px;
+        height: auto;
+        background-color: white;
+        margin: 0 auto;
+    }
+    
+    header {
+        height: 100px;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         align-items: center;
-        width: 500px;
-        height:  50px;
-        margin: 0 20px 0 0 0;
-            a {
-                color: $text-color-main-darker;
+        .headerLogo {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            height: 50px;
+            width: 300px;
+            margin: 0 0 0 100px;
+            padding: 5px;
+            .headerLogo__text {
+                font-size: 18px;
+                letter-spacing: 0px;
+                line-height: 41px;
+                color: rgb(85, 85, 85);
+                font-family: "Montserrat";
+                font-weight: bold;
                 text-transform: uppercase;
+                text-decoration: none;
+            }
+            .headerLogo__image {
+                margin: 0 5px 0 0;
+                width: 28px;
+                height: 28px;
+            }
+            .navigation {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                max-width: 700px;
+                height: 50px;
+                margin: 0 80px 0 0 0;
+                .navElement {
+                    text-decoration: none;
+                    font-size: 14px;
+                    line-height: 41px;
+                    color: red;
+                    font-family: "Montserrat";
+                    text-align: center;
+                    margin: 0 60px 0 0;
+                }
+            }
         }
     }
-
-
-};
-
-.section1{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    flex-direction: column;
-    height: 530px;
-     /*
+    
+    .section1 {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-direction: column;
+        height: 530px;
+        /*
     transparent background!!!!!!!!!!!!!!!!! IMPORTANT!
 
     box-shadow create opacity layer on the image
     */
-    ///Opacity of background image
-    background-image: url(../images/background1.jpg);
-    background-repeat: no-repeat;
-
-
-    box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
-
-    h1 {
-        color: $title-color-white;
-        margin: 120px 0 0 0;
-        width: 500px;
-        font-size: 44px;
-        text-align: center;
+        ///Opacity of background image
+        background-image: url(../images/background1.jpg);
+        background-repeat: no-repeat;
+        box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
+        h1 {
+            color: $title-color-white;
+            margin: 120px 0 0 0;
+            max-width: 500px;
+            font-size: 44px;
+            text-align: center;
+        }
+        p {
+            color: $text-color-main-darker;
+            margin: 45px 0 60px 0;
+        }
+        button {}
     }
-
-    p {
-        color: $text-color-main-darker;
-        margin: 45px 0 60px 0;
+    
+    // proffessional service section
+    .section2 {
+        height: 535px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        .sectionServices {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: baseline;
+            width: 80%;
+            margin: 0 0 0 0;
+            article {
+                width: 270px;
+                height: 200px;
+                text-align: center;
+                margin: 50px 0 0 0;
+            }
+        }
     }
-
-    button {
-
+    
+    //just relax section
+    .section3 {
+        min-height: 615px;
+        display: flex;
+        justify-content: flex-end;
+        background-color: #e9e9e9;
+        /*
+    don't know why background property is not working. I had used background-image property instead background property and gear image appered.
+    */
+        background-image: url(../images/gear.png);
+        background-repeat: no-repeat;
+        background-size: 387px 414px;
+        background-position: 15%;
+        article {
+            width: 75%;
+            background: url(../images/background2.jpg) no-repeat 0 0;
+            box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
+            background-size: cover;
+            color: $text-color-main-darker;
+            padding: 0 0 0 0;
+            h2 {
+                color: $title-color-white;
+                text-transform: uppercase;
+                margin: 50px 0 0 60px;
+                span {
+                    color: $button-color-green;
+                }
+            }
+            p {
+                width: 60%;
+                margin: 50px 0 0 60px;
+            }
+            ul {
+                list-style: none;
+                margin: 50px 0 50px 60px;
+                li {
+                    background: url(../images/footerIcons1.png) no-repeat 0 0;
+                    margin: 20px 0 0 -35px;
+                    padding: 0 0 0 35px;
+                }
+            }
+            button {
+                margin: 0 0 0 60px;
+            }
+        }
     }
-
-}
-
-
-
-
-// proffessional service section
-.section2 {
-    height: 535px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-
-
-    .sectionServices {
+    
+    //latest project section
+    .section4 {
+        height: 800px;
+        background: url(../images/latestProjectTablet.png) no-repeat right center;
+        article {
+            width: 30.71%; // 430px : 1400px =0,3071
+            margin: 100px 0 0 220px;
+            // need to find out how to align in flex display
+            ul {
+                // Need to remove this code and change to flex display
+                margin: 0 0 0 -40px;
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 0 0 20px 0;
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0 20px 0 0;
+                    }
+                    span {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        padding: 0 0 0 0;
+                        h5 {
+                            margin: 0;
+                        }
+                        p {
+                            margin: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    //culture and values section
+    .section5 {
+        height: 800px;
+        box-sizing: border-box;
+        background-color: aqua;
+        padding: 30px 0 0 0;
+        div {
+            display: flex;
+            justify-content: space-around;
+            margin: 100px 0 0 0;
+            article {
+                width: 21.42%; //300px : 1400px = 0,2142
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                margin: 0 0 0 0;
+                img {}
+                h5 {}
+                p {}
+            }
+        }
+    }
+    
+    //OUR AWESOME CLIENTS section
+    .section6 {
+        height: 720px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fafafa;
+        p {
+            margin: 0 0 100px 0;
+        }
+        article {
+            width: 35.71%; //50px : 1400px = 0,35714286
+            height: 90px;
+            .quote {
+                color: $text-color-main-darkest;
+                margin: 0 0 0 0;
+            }
+            .quoteAuthor {
+                color: $button-color-green;
+                margin: 10px 0 0 0;
+            }
+        }
+        .rightArticle {
+            align-self: flex-end;
+            margin: 0 300px 30px 0;
+        }
+        .leftArticle {
+            align-self: flex-start;
+            margin: 30px 0 0 300px;
+        }
+    }
+    
+    //READY TO TALK ABOUT YOUR NEXT PROJECT?
+    .section7 {
+        height: 240px;
+        background-color: $button-color-green;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        h1 {
+            color: $title-color-white;
+            text-transform: uppercase;
+            margin: 25px;
+        }
+    }
+    
+    .section8 {
+        min-height: 160px;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: center;
+        a {
+            height: 40px;
+            width: auto;
+            margin: 0 20px;
+            img {}
+        }
+    }
+    
+    .section9 {
+        height: 365px;
+        background-color: black;
+        color: white;
         display: flex;
         flex-direction: row;
         justify-content: space-around;
-        align-items: baseline;
-        width: 80%;
-        margin: 0 0 0 0;
-
-
         article {
-            width: 270px;
-            height: 200px;
-            text-align: center;
-            margin: 50px 0 0 0;
-        }
-    }
-}
-
-//just relax section
-.section3 {
-
-    min-height: 615px;
-    display: flex;
-    justify-content: flex-end;
-    background-color: #e9e9e9;
-
-    /*
-    don't know why background property is not working. I had used background-image property instead background property and gear image appered.
-    */
-    background-image: url(../images/gear.png);
-    background-repeat: no-repeat;
-    background-size: 387px 414px;
-    background-position: 15%;
-
-
-
-
-    article {
-        width: 75%;
-        background: url(../images/background2.jpg) no-repeat 0 0;
-        box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
-        background-size: cover;
-        color: $text-color-main-darker;
-        padding: 0 0 0 0;
-        h2 {
-            color: $title-color-white;
-            text-transform: uppercase;
-            margin: 50px 0 0 60px;
-            span {
-                color: $button-color-green;
-            }
-
-
-        }
-
-        p{
-            width: 490px;
-            margin: 50px 0 0 60px;
-        }
-
-        ul {
-            list-style: none;
-            margin: 50px 0 50px 60px;
-            li {
-
-                background: url(../images/footerIcons1.png) no-repeat 0 0;
-                margin: 20px 0 0 -35px ;
-                padding: 0 0 0 35px;
-            }
-
-        }
-
-        button {
-            margin: 0 0 0 60px;
-        }
-
-    }
-}
-
-//latest project section
-.section4 {
-        height: 800px;
-        background: url(../images/latestProjectTablet.png) no-repeat right center;
-    article {
-
-        width: 430px;
-        margin: 100px 0 0 220px;
-        // need to find out how to align in flex display
-
-        ul {
-            // Need to remove this code and change to flex display
-            margin: 0 0 0 -40px;
-            li{
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                margin: 0 0 20px 0;
-
-                img {
-                    width: 60px;
-                    height: 60px;
-                    margin: 0 20px 0 0;
-
-                }
-
-                span {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    padding: 0 0 0 0;
-
-                    h5 {
-                        margin: 0;
-                    }
-
-                    p{
-                         margin: 0;
-                    }
-                }
-            }
-        }
-    }
-
-}
-
-//culture and values section
-.section5 {
-    height: 800px;
-    box-sizing: border-box;
-    background-color: aqua;
-    padding: 30px 0 0 0;
-
-    div {
-
-        display: flex;
-        justify-content: space-around;
-        margin: 100px 0 0 0;
-
-        article {
-            width: 300px;
+            width: 325px;
             display: flex;
             flex-direction: column;
-            align-items: center;
-            text-align: center;
-            margin: 0 0 0 0;
-
-            img {
-
+            justify-content: flex-start;
+            h4 {}
+            ul {
+                li {
+                    img {
+                        width: 25/325 *100%;
+                        height: auto;
+                        margin: 0 10px 0 0;
+                        float: left;
+                    }
+                    p {
+                        width: 200/325 *100%;
+                    }
+                }
             }
-
-            h5 {
-
-            }
-
-            p {
-
-            }
-
-        }
-
-    }
-
-}
-
-//OUR AWESOME CLIENTS section
-.section6 {
-
-    height: 720px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fafafa;
-    p {
-        margin: 0 0 100px 0;
-    }
-
-    article {
-        width: 500px;
-        height: 90px;
-
-        .quote {
-            color:$text-color-main-darkest;
-            margin: 0 0 0 0;
-        }
-
-        .quoteAuthor {
-            color: $button-color-green;
-            margin: 10px 0 0 0;
         }
     }
-
-    .rightArticle {
-        align-self: flex-end;
-        margin: 0 300px 30px 0;
-    }
-
-    .leftArticle {
-        align-self: flex-start;
-        margin: 30px 0 0 300px;
-    }
-
-
-}
-
-
-//READY TO TALK ABOUT YOUR NEXT PROJECT?
-.section7 {
-    height: 240px;
-    background-color: $button-color-green;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    h1 {
-        color: $title-color-white;
-        text-transform: uppercase;
-    }
-
-    a {
-
-        width: 184px;
-        height: 50px;
-        border: solid 3px $title-color-white;
-        margin: 50px 0 0 0;
-        text-align: center;
-
-        span {
-            margin: 50px 0 0 0;
-
-        }
-    }
-}
-
-
-.section8 {
-    min-height: 160px;
-    display: flex;
-    flex-flow: row wrap;
-    align-items: center;
-    justify-content: center;
-
-    a {
-        height: 40px;
-        width: auto;
-        margin: 0 10px;
-
-        img {
-
-
-        }
-    }
-
-}
-
-
-.section9 {
-    height: 365px;
-    background-color: black;
-    color:white;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
-    article {
-        width: 325px;
+    
+    .section10 {
+        height: 100px;
         display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-
-        h4 {
-
+        justify-content: center;
+        align-items: center;
+        .copyrights {
+            margin: 0 500px 0 0;
         }
-
-        ul {
-
-            li{
-
-
-
-                img {
-                    width: 25/325 *100%;
-                    height: auto;
-                    margin: 0 10px 0 0;
-                    float: left;
-                }
-
-                p {
-                    width: 200/325 *100%;
-
-                }
-            }
-
+        a {
+            margin: 5px;
         }
-
-
     }
-
-
-}
-
-
-.section10 {
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .copyrights {
-        margin: 0 500px 0 0;
-    }
-
-    a {
-        margin: 5px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
