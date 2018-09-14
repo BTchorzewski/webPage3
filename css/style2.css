@@ -1,40 +1,44 @@
-body {
-  background-color: antiquewhite;
-  font-family: 'Roboto Slab', serif; }
-  body section {
-    width: 100%; }
-  body li {
-    list-style: none; }
+body section {
+  width: 100%; }
+
+body li {
+  list-style: none; }
 
 .upperLetters {
   text-transform: uppercase; }
 
+.section__title {
+  font-size: 40px;
+  letter-spacing: -2px;
+  line-height: 60px;
+  color: #222222;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 100px 0 0 0; }
+
+.section__subtitle {
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  text-align: center;
+  margin: 19px 0 0 0; }
+
 .greenButton {
-  width: 200px;
-  height: 60px;
+  width: 201px;
+  height: 61px;
   border-radius: 30px;
   background-color: #7bc575;
-  font-size: 20px;
   font-size: 15px;
+  color: white;
   letter-spacing: 0px;
   line-height: 43px;
-  color: #ffffff;
-  font-family: "Montserrat";
+  font-family: 'Montserrat', sans-serif;
   font-weight: bold;
   text-align: center;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7); }
-
-.sectionTitle {
-  font-size: 30px;
-  text-align: center;
-  text-transform: uppercase;
-  height: auto;
-  margin: 130px 0 5px 0; }
-
-.titleInforamtion {
-  text-align: center;
-  color: #777777;
-  margin: 10px 0 0 0; }
 
 .wrapper {
   max-width: 1400px;
@@ -44,46 +48,46 @@ body {
   margin: 0 auto; }
 
 header {
-  height: 100px;
+  height: 120px;
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  header .headerLogo {
+  header a.headerLogo {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 50px;
-    width: 300px;
-    margin: 0 0 0 100px;
-    padding: 5px; }
-    header .headerLogo .headerLogo__text {
-      font-size: 18px;
+    height: 29px;
+    width: 143px;
+    margin: 0 0 0 231px;
+    padding: 5px;
+    text-decoration: none; }
+    header a.headerLogo p.headerLogo__text {
+      font-size: 14px;
       letter-spacing: 0px;
       line-height: 41px;
       color: #555555;
-      font-family: "Montserrat";
+      font-family: 'Montserrat', sans-serif;
       font-weight: bold;
-      text-transform: uppercase;
-      text-decoration: none; }
-    header .headerLogo .headerLogo__image {
+      text-transform: uppercase; }
+    header a.headerLogo .headerLogo__image {
       margin: 0 5px 0 0;
-      width: 28px;
+      width: 30px;
       height: 28px; }
-    header .headerLogo .navigation {
-      display: flex;
-      justify-content: space-around;
-      align-items: center;
-      max-width: 700px;
-      height: 50px;
-      margin: 0 80px 0 0 0; }
-      header .headerLogo .navigation .navElement {
-        text-decoration: none;
-        font-size: 14px;
-        line-height: 41px;
-        color: red;
-        font-family: "Montserrat";
-        text-align: center;
-        margin: 0 60px 0 0; }
+  header nav.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 600px;
+    height: 50px;
+    margin-right: 241px; }
+    header nav.navigation a.navElement {
+      font-size: 14px;
+      line-height: 41px;
+      color: #777777;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+      margin: 0 40px 0 0;
+      text-decoration: none; }
 
 .section1 {
   display: flex;
@@ -92,22 +96,30 @@ header {
   flex-direction: column;
   height: 530px;
   /*
-    transparent background!!!!!!!!!!!!!!!!! IMPORTANT!
+transparent background!!!!!!!!!!!!!!!!! IMPORTANT!
 
-    box-shadow create opacity layer on the image
-    */
+box-shadow create opacity layer on the image
+*/
   background-image: url(../images/background1.jpg);
   background-repeat: no-repeat;
-  box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6); }
+  box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.75); }
   .section1 h1 {
-    color: #fff;
-    margin: 120px 0 0 0;
-    max-width: 500px;
-    font-size: 44px;
-    text-align: center; }
+    width: 522px;
+    font-size: 60px;
+    letter-spacing: -3px;
+    line-height: 65px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin: 120px 0 0 0; }
   .section1 p {
-    color: #777777;
-    margin: 45px 0 60px 0; }
+    font-size: 20px;
+    letter-spacing: 0px;
+    color: #cccccc;
+    font-family: "Roboto Slab";
+    text-align: center;
+    margin: 41px 0 70px 0; }
 
 .section2 {
   height: 535px;
@@ -134,44 +146,82 @@ header {
   justify-content: flex-end;
   background-color: #e9e9e9;
   /*
-    don't know why background property is not working. I had used background-image property instead background property and gear image appered.
-    */
+don't know why background property is not working. I had used background-image property instead background property and gear image appered.
+*/
   background-image: url(../images/gear.png);
   background-repeat: no-repeat;
-  background-size: 387px 414px;
-  background-position: 15%; }
+  background-size: 387px 423px;
+  background-position: 12%; }
   .section3 article {
-    width: 75%;
+    width: 960px;
     background: url(../images/background2.jpg) no-repeat 0 0;
-    box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.6);
+    box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.76);
     background-size: cover;
-    color: #777777;
-    padding: 0 0 0 0; }
+    padding: 100px 0 0 120px; }
     .section3 article h2 {
-      color: #fff;
-      text-transform: uppercase;
-      margin: 50px 0 0 60px; }
+      font-size: 40px;
+      letter-spacing: -2px;
+      color: white;
+      font-family: "Montserrat";
+      font-weight: bold;
+      text-transform: uppercase; }
       .section3 article h2 span {
         color: #7cc576; }
     .section3 article p {
       width: 60%;
-      margin: 50px 0 0 60px; }
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #cccccc;
+      font-family: "Roboto Slab";
+      margin: 45px 0 0 0; }
     .section3 article ul {
       list-style: none;
-      margin: 50px 0 50px 60px; }
+      margin: 30px 0 58px 0; }
       .section3 article ul li {
-        background: url(../images/footerIcons1.png) no-repeat 0 0;
-        margin: 20px 0 0 -35px;
-        padding: 0 0 0 35px; }
+        background: url(../images/Checkmark-3.png) no-repeat 0 0;
+        margin: 0 0 10px -35px;
+        padding: 6px 0 0 50px;
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: #cccccc;
+        font-family: "Roboto Slab";
+        height: 31px; }
     .section3 article button {
-      margin: 0 0 0 60px; }
+      margin: 0 0 100px 0;
+      width: 168px;
+      height: 60px;
+      border-radius: 30px;
+      background-color: #7bc575;
+      font-size: 15px;
+      letter-spacing: 0px;
+      line-height: 43px;
+      color: white;
+      font-family: "Montserrat";
+      font-weight: bold;
+      text-align: center;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+      text-transform: uppercase; }
 
 .section4 {
   height: 800px;
-  background: url(../images/latestProjectTablet.png) no-repeat right center; }
+  background: url(../images/latestProjectTablet.png) no-repeat 100% 60%; }
   .section4 article {
     width: 30.71%;
-    margin: 100px 0 0 220px; }
+    margin: 100px 0 50px 220px; }
+    .section4 article h4 {
+      font-size: 18px;
+      letter-spacing: 0px;
+      color: #222222;
+      font-family: "Montserrat";
+      font-weight: bold;
+      text-transform: uppercase;
+      margin: 0 0 15px 0; }
+    .section4 article p {
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #777777;
+      font-family: "Roboto Slab";
+      margin: 0 0 25px 0; }
     .section4 article ul {
       margin: 0 0 0 -40px; }
       .section4 article ul li {
@@ -180,8 +230,8 @@ header {
         align-items: center;
         margin: 0 0 20px 0; }
         .section4 article ul li img {
-          width: 60px;
-          height: 60px;
+          width: 68px;
+          height: auto;
           margin: 0 20px 0 0; }
         .section4 article ul li span {
           display: flex;
@@ -189,43 +239,109 @@ header {
           justify-content: flex-start;
           padding: 0 0 0 0; }
           .section4 article ul li span h5 {
-            margin: 0; }
+            font-size: 18px;
+            letter-spacing: 0px;
+            olor: #222222;
+            font-family: "Montserrat";
+            font-weight: bold;
+            margin: 0 0 3px 0; }
           .section4 article ul li span p {
             margin: 0; }
+    .section4 article a {
+      font-size: 16px;
+      letter-spacing: 0px;
+      color: #7cc576;
+      font-family: "Montserrat";
+      font-weight: bold;
+      text-decoration: none;
+      text-transform: uppercase; }
+      .section4 article a img {
+        margin: 0 0 0 7px;
+        height: 15px;
+        width: auto; }
 
 .section5 {
   height: 800px;
-  box-sizing: border-box;
-  background-color: aqua;
+  background-color: #f9f9f9;
   padding: 30px 0 0 0; }
   .section5 div {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
-    margin: 100px 0 0 0; }
+    margin: 100px auto 0 auto;
+    width: 1000px; }
     .section5 div article {
-      width: 21.42%;
+      width: 274px;
       display: flex;
       flex-direction: column;
       align-items: center;
       text-align: center;
-      margin: 0 0 0 0; }
+      margin: 0 -30px;
+      position: relative; }
+      .section5 div article .line1::after, .section5 div article .line2:after {
+        content: "";
+        display: block;
+        width: 170px;
+        height: 3px;
+        position: absolute;
+        top: 40px;
+        left: 225px;
+        background-color: #777777;
+        z-index: 3; }
+    .section5 div h5 {
+      font-size: 18px;
+      color: #222222;
+      font-family: "Montserrat";
+      font-weight: bold;
+      text-transform: uppercase; }
+    .section5 div p {
+      font-size: 14px;
+      letter-spacing: 0px;
+      color: #777777;
+      font-family: "Roboto Slab";
+      text-align: center; }
 
 .section6 {
   height: 720px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: #fafafa; }
+  align-items: center; }
   .section6 p {
     margin: 0 0 100px 0; }
   .section6 article {
-    width: 35.71%;
-    height: 90px; }
+    max-width: 900px;
+    height: 173px;
+    background-color: #f9f9f9; }
+    .section6 article img {
+      display: block;
+      width: 221px;
+      height: 221px;
+      border-radius: 110px;
+      float: left;
+      margin: 0 80px 0 0; }
     .section6 article .quote {
-      color: #555555;
-      margin: 0 0 0 0; }
+      font-size: 22px;
+      line-height: 28px;
+      color: #777777;
+      font-family: "Roboto Slab";
+      text-align: justify;
+      margin: 0 0 0 0;
+      position: relative; }
+    .section6 article .quote:before {
+      position: absolute;
+      margin-left: -10px;
+      content: open-quote;
+      quotes: "\201C" "\201D" "\2018" "\2019"; }
+    .section6 article .quote::after {
+      position: absolute;
+      content: close-quote;
+      quotes: "\201C" "\201D" "\2018" "\2019"; }
     .section6 article .quoteAuthor {
+      font-size: 18px;
+      line-height: 36px;
       color: #7cc576;
+      font-family: "Roboto Slab";
+      text-align: center;
       margin: 10px 0 0 0; }
   .section6 .rightArticle {
     align-self: flex-end;
@@ -235,16 +351,37 @@ header {
     margin: 30px 0 0 300px; }
 
 .section7 {
-  height: 240px;
-  background-color: #7cc576;
+  height: 251px;
+  background-color: #7bc575;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start; }
   .section7 h1 {
-    color: #fff;
+    font-size: 40px;
+    letter-spacing: -2px;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
     text-transform: uppercase;
-    margin: 25px; }
+    padding: 39px 0 0 0; }
+  .section7 a {
+    display: block;
+    width: 174px;
+    height: 48px;
+    border-radius: 4px;
+    background-color: #7bc575;
+    border: 3px solid #ffffff;
+    font-size: 18px;
+    letter-spacing: 0px;
+    line-height: 41px;
+    color: white;
+    font-family: "Montserrat";
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase; }
 
 .section8 {
   min-height: 160px;
