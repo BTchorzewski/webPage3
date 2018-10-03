@@ -368,7 +368,7 @@ don't know why background property is not working. I had used background-image p
 
 //OUR AWESOME CLIENTS section
 .section6 {
-    height: 720px;
+    min-height: 720px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -376,57 +376,8 @@ don't know why background property is not working. I had used background-image p
     p {
         margin: 0 0 100px 0;
     }
-    article {
-        max-width: 900px;
-        height: 173px;
-        background-color: #f9f9f9;
-        img {
-            display: block;
-            width:221px;
-            height: 221px;
-            border-radius: 110px;
-            float:left;
-            margin: 0 80px 0 0;
-        }
-        .quote {
-            font-size: 22px;
-            line-height: 28px;
-            color: rgb(119,119,119);
-            font-family: "Roboto Slab";
-            text-align: justify;
-            margin: 0 0 0 0;
-            position: relative;
-            
-        }
-        .quote:before {
-            position:absolute;
-            margin-left:-10px;
-            content: open-quote;
-            quotes: "\201C" "\201D" "\2018" "\2019";
-}
-        .quote::after {
-            position:absolute;
-            content: close-quote;
-            quotes: "\201C" "\201D" "\2018" "\2019";
-        }
-        
-        .quoteAuthor {
-            font-size: 18px;
-            line-height: 36px;
-            color: rgb(124,197,118);
-            font-family: "Roboto Slab";
-            text-align: center;
-            margin: 10px 0 0 0;
-        }
-    }
-    .rightArticle {
-        align-self: flex-end;
-        margin: 0 300px 30px 0;
-    }
-    .leftArticle {
-        align-self: flex-start;
-        margin: 30px 0 0 300px;
-    }
+    
+   
 }
 
 //READY TO TALK ABOUT YOUR NEXT PROJECT?
@@ -456,7 +407,7 @@ don't know why background property is not working. I had used background-image p
         border: 3px solid #ffffff;
         font-size: 18px;
         letter-spacing: 0px;
-        line-height: 41px;
+        line-height: 48px;
         color: rgb(255,255,255);
         font-family: "Montserrat";
         font-weight: bold;
@@ -473,43 +424,129 @@ don't know why background property is not working. I had used background-image p
     flex-flow: row wrap;
     align-items: center;
     justify-content: center;
+    background-color: #f9f9f9;
+    
     a {
         height: 40px;
         width: auto;
         margin: 0 20px;
-        img {}
+        
     }
 }
 
 .section9 {
-    height: 365px;
+    min-height: 365px;
     background-color: black;
     color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 60px 0 60px 0;
     
     article {
-        width: 325px;
+        min-width: 325px;
+        max-width: 400px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        h4 {}
+        font-size: 18px;
+        
+        .articlesTitle {
+            letter-spacing: 0px;
+            line-height: 50px;
+            color: #ffffff;
+            font-family: "Montserrat";
+            font-weight: 700;
+            text-transform: uppercase;
+            margin: 0 0 -10px 40px;
+
+        }
         ul {
             li {
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                
                 img {
-                    width: 25/325 *100%;
-                    height: auto;
-                    margin: 0 10px 0 0;
-                    float: left;
+                    width: auto;
+                    height: 31px;
+                    margin: 20px 10px 0 0;    
+                    align-self:stretch;
                 }
                 p {
-                    width: 200/325 *100%;
+                    font-family: "Roboto Slab";
+                    font-weight: 600;
+                    font-size: 16px;
+                    color: #ececec;
+                    line-height: 20px;
                 }
             }
         }
     }
 }
+
+
+
+
+//section 9 elements
+
+
+
+.post {
+    width: 300px;
+    .post__element {
+        width: inherit;
+        .post__image {
+            height: 30px;
+            width: auto;
+            margin-right: 14px;
+        }
+        
+        .post__text {
+            width: 200px;
+        }
+        
+    }
+    
+}
+
+.twitter {
+    width: 280px;
+    height: auto;
+    
+    .twitter__element {
+        
+        .twitter__image {
+            width: 23px;
+            height: 17px;        
+        }
+        
+        .twitter__news {
+            
+            .twitter__text {
+                font-weight: bold;
+                
+            }
+
+            .twitter__tag {
+                font-weight: bolder;   
+                margin: -10px auto;
+                color:#fff;
+            }
+
+            .twitter__time {
+                font-size: 12px;
+            }
+        }
+        
+
+        
+        
+    }
+    
+    
+}
+
 
 .section10 {
     height: 100px;

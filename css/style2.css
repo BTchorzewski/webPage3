@@ -302,53 +302,12 @@ don't know why background property is not working. I had used background-image p
       text-align: center; }
 
 .section6 {
-  height: 720px;
+  min-height: 720px;
   display: flex;
   flex-direction: column;
   align-items: center; }
   .section6 p {
     margin: 0 0 100px 0; }
-  .section6 article {
-    max-width: 900px;
-    height: 173px;
-    background-color: #f9f9f9; }
-    .section6 article img {
-      display: block;
-      width: 221px;
-      height: 221px;
-      border-radius: 110px;
-      float: left;
-      margin: 0 80px 0 0; }
-    .section6 article .quote {
-      font-size: 22px;
-      line-height: 28px;
-      color: #777777;
-      font-family: "Roboto Slab";
-      text-align: justify;
-      margin: 0 0 0 0;
-      position: relative; }
-    .section6 article .quote:before {
-      position: absolute;
-      margin-left: -10px;
-      content: open-quote;
-      quotes: "\201C" "\201D" "\2018" "\2019"; }
-    .section6 article .quote::after {
-      position: absolute;
-      content: close-quote;
-      quotes: "\201C" "\201D" "\2018" "\2019"; }
-    .section6 article .quoteAuthor {
-      font-size: 18px;
-      line-height: 36px;
-      color: #7cc576;
-      font-family: "Roboto Slab";
-      text-align: center;
-      margin: 10px 0 0 0; }
-  .section6 .rightArticle {
-    align-self: flex-end;
-    margin: 0 300px 30px 0; }
-  .section6 .leftArticle {
-    align-self: flex-start;
-    margin: 30px 0 0 300px; }
 
 .section7 {
   height: 251px;
@@ -375,7 +334,7 @@ don't know why background property is not working. I had used background-image p
     border: 3px solid #ffffff;
     font-size: 18px;
     letter-spacing: 0px;
-    line-height: 41px;
+    line-height: 48px;
     color: white;
     font-family: "Montserrat";
     font-weight: bold;
@@ -388,31 +347,77 @@ don't know why background property is not working. I had used background-image p
   display: flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  background-color: #f9f9f9; }
   .section8 a {
     height: 40px;
     width: auto;
     margin: 0 20px; }
 
 .section9 {
-  height: 365px;
+  min-height: 365px;
   background-color: black;
   color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding: 60px 0 60px 0; }
   .section9 article {
-    width: 325px;
+    min-width: 325px;
+    max-width: 400px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; }
-    .section9 article ul li img {
-      width: 7.69231%;
-      height: auto;
-      margin: 0 10px 0 0;
-      float: left; }
-    .section9 article ul li p {
-      width: 61.53846%; }
+    justify-content: flex-start;
+    font-size: 18px; }
+    .section9 article .articlesTitle {
+      letter-spacing: 0px;
+      line-height: 50px;
+      color: #ffffff;
+      font-family: "Montserrat";
+      font-weight: 700;
+      text-transform: uppercase;
+      margin: 0 0 -10px 40px; }
+    .section9 article ul li {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .section9 article ul li img {
+        width: auto;
+        height: 31px;
+        margin: 20px 10px 0 0;
+        align-self: stretch; }
+      .section9 article ul li p {
+        font-family: "Roboto Slab";
+        font-weight: 600;
+        font-size: 16px;
+        color: #ececec;
+        line-height: 20px; }
+
+.post {
+  width: 300px; }
+  .post .post__element {
+    width: inherit; }
+    .post .post__element .post__image {
+      height: 30px;
+      width: auto;
+      margin-right: 14px; }
+    .post .post__element .post__text {
+      width: 200px; }
+
+.twitter {
+  width: 280px;
+  height: auto; }
+  .twitter .twitter__element .twitter__image {
+    width: 23px;
+    height: 17px; }
+  .twitter .twitter__element .twitter__news .twitter__text {
+    font-weight: bold; }
+  .twitter .twitter__element .twitter__news .twitter__tag {
+    font-weight: bolder;
+    margin: -10px auto;
+    color: #fff; }
+  .twitter .twitter__element .twitter__news .twitter__time {
+    font-size: 12px; }
 
 .section10 {
   height: 100px;
