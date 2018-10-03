@@ -490,12 +490,36 @@ don't know why background property is not working. I had used background-image p
 
 //section 9 elements
 
-
+.contact {
+    
+    .contact__element {
+        
+        .contact__image {
+            height: 30px;
+            width: 20px;
+            
+        }
+        
+        .contact__image-wide {
+            width: 23px;
+            height: 16px;
+        }
+        
+        .contact__text {
+            font-family: "Roboto Slab";
+            line-height: 30px;
+        }
+        
+    }
+}
 
 .post {
     width: 300px;
+    
     .post__element {
         width: inherit;
+        margin-bottom: -14px;
+        
         .post__image {
             height: 30px;
             width: auto;
@@ -547,16 +571,43 @@ don't know why background property is not working. I had used background-image p
     
 }
 
-
+//section 10 - footer
 .section10 {
     height: 100px;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
+    font-size: 14px;
+    letter-spacing: 0px;
+    line-height: 22px;
+    color: #555555;
+    font-family: "Montserrat";
+    
     .copyrights {
-        margin: 0 500px 0 0;
+        margin: 0 0 0 0;
     }
-    a {
-        margin: 5px;
+    
+    .icons {
+        
+        .icons__element {
+            margin: 0 4px;
+        }
     }
+    
+    .programing:any-link {
+        text-decoration: none;
+        color: inherit;
+    }
+    
 }
+
+
+
+
+
+
+
+
+
+
+

@@ -393,10 +393,23 @@ don't know why background property is not working. I had used background-image p
         color: #ececec;
         line-height: 20px; }
 
+.contact .contact__element .contact__image {
+  height: 30px;
+  width: 20px; }
+
+.contact .contact__element .contact__image-wide {
+  width: 23px;
+  height: 16px; }
+
+.contact .contact__element .contact__text {
+  font-family: "Roboto Slab";
+  line-height: 30px; }
+
 .post {
   width: 300px; }
   .post .post__element {
-    width: inherit; }
+    width: inherit;
+    margin-bottom: -14px; }
     .post .post__element .post__image {
       height: 30px;
       width: auto;
@@ -422,9 +435,17 @@ don't know why background property is not working. I had used background-image p
 .section10 {
   height: 100px;
   display: flex;
-  justify-content: center;
-  align-items: center; }
+  justify-content: space-around;
+  align-items: center;
+  font-size: 14px;
+  letter-spacing: 0px;
+  line-height: 22px;
+  color: #555555;
+  font-family: "Montserrat"; }
   .section10 .copyrights {
-    margin: 0 500px 0 0; }
-  .section10 a {
-    margin: 5px; }
+    margin: 0 0 0 0; }
+  .section10 .icons .icons__element {
+    margin: 0 4px; }
+  .section10 .programing:any-link {
+    text-decoration: none;
+    color: inherit; }
