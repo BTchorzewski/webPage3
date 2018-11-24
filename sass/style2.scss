@@ -166,12 +166,12 @@ box-shadow create opacity layer on the image
         align-items: baseline;
         width: 80%;
         margin: 0 0 0 0;
-        article {
+        .service {
             width: 24.107143%;
             min-height: 200px;
             text-align: center;
-            text-justify: inter-character;
             margin: 50px 0 0 0;
+            
         }
     }
 }
@@ -281,7 +281,7 @@ don't know why background property is not working. I had used background-image p
                 align-items: center;
                 margin: 0 0 20px 0;
                 img {
-                    width: 68px;
+                    min-width: 68px;
                     height: auto;
                     margin: 0 20px 0 0;
                 }
@@ -410,8 +410,8 @@ don't know why background property is not working. I had used background-image p
             
             .clients__image {
                 display: inline-block;
-                width: 220px;
-                height: 220px;
+                width: 24.66%;
+                height: auto;
                 border-radius: 50%;
                 border: 2px solid red;
                 margin: 20px 0 0 0;
@@ -493,7 +493,7 @@ don't know why background property is not working. I had used background-image p
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    h1 {
+    .section7__title {
         font-size: 40px;
         letter-spacing: -2px;
         color: rgb(255,255,255);
@@ -727,10 +727,16 @@ don't know why background property is not working. I had used background-image p
             justify-content: center;
             align-items: center;
             width: 100%;
-            margin: 0 0 100px 0;
-            article {
-             
-                
+            margin: 0 0 60px 0;
+            .service {
+                width: 80%;
+                .service__title {
+                    font-size: 26px;
+                }
+                .service__description {
+                    text-align: justify;
+                    text-justify: auto;
+                }
             }
         }
     }
@@ -759,7 +765,7 @@ don't know why background property is not working. I had used background-image p
             
     
             article.section5__article {
-                width: 44.909091%; 
+                width: 80%; 
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -785,6 +791,8 @@ don't know why background property is not working. I had used background-image p
             }
             p {
                 font-size: 18px;
+                text-align: justify;
+                text-justify: inter-character;
                 
             }
         }
@@ -805,49 +813,38 @@ don't know why background property is not working. I had used background-image p
             height: 75%;
             margin: 0 auto;
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
             
             .clients__portfolio {
-                min-height: 300px;
+                box-sizing: border-box;
+                min-height: 600px;
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                flex-wrap: nowrap;
                 align-items: center;
                 justify-content: flex-start;
-                flex: 1;
+                
                 
                 .clients__image {
-                    display: inline-block;
-                    width: 220px;
-                    height: 220px;
-                    border-radius: 50%;
-                    border: 2px solid red;
-                    margin: 20px 0 0 0;
+                    width: 50%;
                     
                 }
     
                 .clients__description {
                     display:inline-block;
                     width: 70%;
-                    height: 50px;
-                    margin: 50px 0 0 50px;
+                    height: 100px;
                     background-color: #f9f9f9;
                     box-sizing: border-box;
-                    padding: 30px 0 0 15px;
+                    padding: 10px 0 0 15px;
                     position: relative;
                 }
     
                 .clients__description::after {
                     content: '';
-                    display: inherit;
-                    width: 20px;
-                    height: 20px;
-                    background-color: inherit;
-                    transform: rotate(45deg);
-                    position: absolute;
-                    top: 120%;    
+                    display: none;
+                    
                 }
     
     
@@ -855,6 +852,7 @@ don't know why background property is not working. I had used background-image p
                 .clients__signature {
                     display: inline-block;
                     height: 60px;
+                    width: 70%;
                     box-sizing: border-box;
                     padding: 30px 0 60px 15px;
                     margin: 0 0 0 50px;
@@ -869,7 +867,7 @@ don't know why background property is not working. I had used background-image p
                 }
             }
     
-            // making small triangle
+           
     
             
     
@@ -877,6 +875,25 @@ don't know why background property is not working. I had used background-image p
         }
         
        
+    }
+
+    .section7 {
+        .section7__title {
+            font-size: 34px;
+            margin-bottom: 45px
+        }
+    }
+
+
+    .section9 {
+        min-height: 365px;
+        background-color: black;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        padding: 60px 0 60px 0;
+        article.section9__articles {
+            width: 100%;       
+        }
     }
 }
 
