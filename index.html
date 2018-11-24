@@ -2,26 +2,31 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
     <link rel="stylesheet" href="normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/style2.css">
+    
     <title>Portfolio 3</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <header>
+        <header id='home'>
             <a href="#" class="headerLogo">
                <img src="images/headerLogo.png" alt="" class="headerLogo__image">
                <p class="headerLogo__text">treehouse</p>
             </a>
             <nav class="navigation">
-                <a href="#" class="navigation__element">Home</a>
+                <a href="#home" class="navigation__element">Home</a>
                 <a href="#" class="navigation__element">About</a>
                 <a href="#" class="navigation__element">Blog</a>
                 <a href="#" class="navigation__element">Portfolio</a>
-                <a href="#" class="navigation__element">Contact</a>
+                <a href="#contact" class="navigation__element">Contact</a>
             </nav>
         </header> 
 
@@ -180,7 +185,7 @@
         </section>
 
         <section class="section9">
-            <article class="section9__articles">
+            <article class="section9__articles" id='contact'>
                 <h4 class="articlesTitle">contact us</h4>
                 <ul class="contact">
                     
@@ -282,6 +287,7 @@
         </section>
 
     </div>
+    
 </body>
-
+<script src="./scripts/menu.js"></script>
 </html>

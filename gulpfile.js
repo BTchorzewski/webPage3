@@ -1,11 +1,11 @@
-'use strict';
 
-let gulp = require('gulp');
-let sass = require('gulp-sass');
-let autoprefixer = require("gulp-autoprefixer");
-let sourcemaps = require("gulp-sourcemaps");
-let browserSync = require('browser-sync').create();
-let csslint = require("gulp-csslint");
+
+var gulp = require('gulp');
+var sass = require('gulp-sass');
+var autoprefixer = require("gulp-autoprefixer");
+var sourcemaps = require("gulp-sourcemaps");
+var browserSync = require('browser-sync').create();
+var csslint = require("gulp-csslint");
 
 gulp.task('browserSync', function () {
     browserSync.init({
@@ -35,19 +35,19 @@ gulp.task('html', function() {
     return gulp.src('./index.html')
     .pipe(browserSync.reload({
         stream: true
-    }))
-})
+    }));
+});
 
 gulp.task("js", function(){
-    return gulp.src("./scripts/*.js")
+    return gulp.src('./scripts/*.js')
     .pipe(browserSync.reload({
         stream: true
-    }))
-})
+    }));
+});
 
 gulp.task('watch', ['browserSync', 'sass', 'html', 'js'], function () {
     gulp.watch('./sass/**/*.scss', ['sass']);
     gulp.watch('./index.html', ['html']);
-    gulp.watch('./scripts/*.js', ['js']);
+    gulp.watch('./scripts/menu.js', ['js']);
 });
 gulp.task('default', ['sass', 'watch', 'html' ]);
