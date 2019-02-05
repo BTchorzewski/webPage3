@@ -1,4 +1,4 @@
-window.addEventListener("DOMContentLoaded", function(){
+(function(){
     var menu = document.querySelector('.headerLogo');
     var navigation = document.querySelector('.navigation');
     var wrapper = document.querySelectorAll('.wrapper');
@@ -15,8 +15,8 @@ window.addEventListener("DOMContentLoaded", function(){
     }
 
     menu.addEventListener('click', showNavigation);
-    wrapper.addEventListener('click', hideNavigation);
+    navigation.addEventListener('click', hideNavigation);
     
-});
+})();
 
 

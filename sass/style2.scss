@@ -387,101 +387,41 @@ don't know why background property is not working. I had used background-image p
     min-height: 900px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    
-    p {
-        margin: 0 0 100px 0;
-    }
-    
+    justify-content: center;
+
     .clients {
         width: 80%;
-        height: 75%;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
+        margin: auto;
+
         .clients__portfolio {
-            height: 300px;
-            width: 720px;
+            margin-top: 50px;
             display: flex;
-            flex-direction: column;
-            flex-wrap: wrap;
-            
+            justify-content: center;
+            align-items: center;
             .clients__image {
-                display: inline-block;
-                width: 24.66%;
-                height: auto;
+                //photos dont have the same ratio.
+                width: 150px;
+                height: 150px;
                 border-radius: 50%;
-                border: 2px solid red;
-                margin: 20px 0 0 0;
+                margin: 0 20px;
+            }
+
+            .clients__info {
+                flex-basis: 400px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                .clients__signature {
+                    color: #7bc575;
+                }
+
                 
             }
-
-            .clients__description {
-                display:inline-block;
-                width: 540px;
-                height: 50px;
-                margin: 50px 0 0 50px;
-                background-color: #f9f9f9;
-                box-sizing: border-box;
-                padding: 30px 0 0 15px;
-                position: relative;
-            }
-
-            .clients__description::after {
-                content: '';
-                display: inherit;
-                width: 20px;
-                height: 20px;
-                background-color: inherit;
-                transform: rotate(45deg);
-                position: absolute;
-                top: 120%;    
-            }
-
-
-            
-            .clients__signature {
-                display: inline-block;
-                height: 60px;
-                box-sizing: border-box;
-                padding: 30px 0 60px 15px;
-                margin: 0 0 0 50px;
-                background-color: #f9f9f9;
-                color: #7bc575;
-            }
         }
-
-        .clients__portfolio:last-child {
-            .clients__image {
-                order: 2;
-            }
-
-            .clients__description {
-                
-                margin: 50px 50px 0 0;
-                
-            }
-            
-            .clients__signature {
-                margin:0 50px 0 0;
-            }
+        .clients__portfolio:nth-child(2) {
+            flex-direction: row-reverse;
         }
-
-        // making small triangle
-
-        .clients__portfolio:first-child > .clients__description::after {
-            left: -13px;
-        }
-
-        .clients__portfolio:last-child > .clients__description::after {
-            right: -13px;
-        }
-
-        
     }
-    
    
 }
 
@@ -531,7 +471,7 @@ don't know why background property is not working. I had used background-image p
     justify-content: center;
     background-color: #f9f9f9;
     
-    a {
+    .companiesLinks {
         height: 40px;
         width: auto;
         margin: 0 20px;
@@ -804,85 +744,46 @@ don't know why background property is not working. I had used background-image p
     }
 
     .section6 {
-        min-height: 900px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-        p {
-            margin: 0 0 100px 0;
-        }
-        
         .clients {
-            width: 80%;
-            height: 75%;
-            margin: 0 auto;
-            display: flex;
-            flex-direction: row;
-            align-items: center;
+            width: 60%;
             
+    
             .clients__portfolio {
-                box-sizing: border-box;
-                min-height: 600px;
-                width: 100%;
+                margin: 50px 0;
                 display: flex;
                 flex-direction: column;
+                justify-content: center;
                 align-items: center;
-                justify-content: flex-start;
-                
-                
                 .clients__image {
-                    width: 50%;
+                    //photos dont have the same ratio.
+                    width: 200px;
+                    height: 200px;
+                    border-radius: 50%;
+                    margin: 0 20px;
+                }
+    
+                .clients__info {
+                    flex-basis: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    .clients__signature {
+                        color: #7bc575;
+                    }
+    
                     
                 }
-    
-                .clients__description {
-                    display:inline-block;
-                    width: 70%;
-                    height: 100px;
-                    background-color: #f9f9f9;
-                    box-sizing: border-box;
-                    padding: 10px 0 0 15px;
-                    position: relative;
-                }
-    
-                .clients__description::after {
-                    content: '';
-                    display: none;
-                    
-                }
-    
-    
-                
-                .clients__signature {
-                    display: inline-block;
-                    height: 60px;
-                    width: 70%;
-                    box-sizing: border-box;
-                    padding: 30px 0 60px 15px;
-                    margin: 0 0 0 50px;
-                    background-color: #f9f9f9;
-                    color: #7bc575;
-                }
             }
-    
-            .clients__portfolio:last-child {
-                .clients__image {
-                    order: 0;
-                }
+            .clients__portfolio:nth-child(2) {
+                flex-direction: column;
             }
-    
-           
-    
-            
-    
-            
-        }
+        }    
         
+       
        
     }
 
     .section7 {
+        padding: 0 0 50px 0;
         .section7__title {
             font-size: 34px;
             margin-bottom: 45px;
@@ -993,5 +894,13 @@ don't know why background property is not working. I had used background-image p
             
         }
       
+    }
+
+    .section10 {
+        flex-direction: column;
+        padding: 25px 0;
+        .icons {
+            order: -1;
+        }
     }
 }
