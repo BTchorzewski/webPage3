@@ -855,7 +855,7 @@ don't know why background property is not working. I had used background-image p
             color: rgb(85, 85, 85);
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
-            font-size: 45px;
+            font-size: 25px;
             position: absolute;
             right: 25px;
         }
@@ -894,6 +894,22 @@ don't know why background property is not working. I had used background-image p
             
         }
       
+    }
+    .section4 {
+        min-height: 800px;
+        background: none;
+        
+        article {
+            width: 60%; // 430px : 1400px =0,3071
+            margin: 100px auto 50px;
+            h4,p {
+                text-align: center;
+            } 
+            p {
+                margin-bottom: 50px;
+            }   
+            
+        }
     }
 
     .section10 {
