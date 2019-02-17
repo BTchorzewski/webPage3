@@ -55,8 +55,9 @@ body {
 }
 
 .wrapper {
+    min-width: 320px;
     max-width: 1400px;
-    min-width: 350px;
+    overflow-x: hidden;
     height: auto;
     background-color: white;
     margin: 0 auto;
@@ -73,13 +74,13 @@ header {
         justify-content: flex-start;
         height: 29px;
         width: 143px;
-        margin: 0 0 0 16.5%;
+        margin: 0 0 0 5%;
         padding: 5px;
         text-decoration: none;
         p.headerLogo__text {
             font-size: 14px;
             letter-spacing: 0px;
-            line-height: 41px;
+            line-height: 30px;
             color: rgb(85, 85, 85);
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
@@ -101,10 +102,10 @@ header {
         align-items: center;
         max-width: 600px;
         height: 50px;
-        margin-right: 17.214286%;
+        margin-right: 5%;
 }
 .navigation__element {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 41px;
         color: rgb(119, 119, 119);
         font-family: 'Montserrat', sans-serif;
@@ -132,14 +133,14 @@ box-shadow create opacity layer on the image
     box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.75);
     h1 {
         width: 522px;
-        font-size: 45px;
+        font-size: 42px;
         letter-spacing: -3px;
         line-height: 65px;
         color: rgb(255, 255, 255);
         font-family: 'Montserrat', sans-serif;
         font-weight: bold;
         text-align: center;
-        margin: 120px 0 0 0;
+        margin: 120px 15px 0 15px;
     }
     p {
         font-size: 20px;
@@ -288,8 +289,9 @@ don't know why background property is not working. I had used background-image p
                 span {
                     display: flex;
                     flex-direction: column;
-                    justify-content: flex-start;
+                    align-items: flex-start;
                     padding: 0 0 0 0;
+                    text-align: left;
                     h5 {
                         font-size: 18px;
                         letter-spacing: 0px;
@@ -465,6 +467,7 @@ don't know why background property is not working. I had used background-image p
 
 .section8 {
     min-height: 160px;
+    max-height: 250px;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -472,9 +475,9 @@ don't know why background property is not working. I had used background-image p
     background-color: #f9f9f9;
     
     .companiesLinks {
-        height: 40px;
-        width: auto;
-        margin: 0 20px;
+        flex: 2 1 190px;
+        margin: 10px 20px;
+        
         
     }
 }
@@ -855,7 +858,7 @@ don't know why background property is not working. I had used background-image p
             color: rgb(85, 85, 85);
             font-family: 'Montserrat', sans-serif;
             font-weight: bold;
-            font-size: 25px;
+            font-size: 18px;
             position: absolute;
             right: 25px;
         }
@@ -902,9 +905,7 @@ don't know why background property is not working. I had used background-image p
         article {
             width: 60%; // 430px : 1400px =0,3071
             margin: 100px auto 50px;
-            h4,p {
-                text-align: center;
-            } 
+            
             p {
                 margin-bottom: 50px;
             }   
@@ -919,4 +920,213 @@ don't know why background property is not working. I had used background-image p
             order: -1;
         }
     }
+}
+
+@media screen and (max-width: 460px) {
+    .section3 {
+        min-height: 615px;
+        display: flex;
+        justify-content: flex-start;
+        background-color: #e9e9e9;
+  
+        background-image: url(../images/gear.png);
+        background-repeat: no-repeat;
+        background-size: 387px 423px;
+        background-position: 12%;
+        article {
+            width: 100%;
+            background: url(../images/background2.jpg) no-repeat 0 0;
+            box-shadow: inset 3000px 3000px rgba(0, 0, 0, 0.76);
+            background-size: cover;
+            padding: 50px;
+            h2 {
+                font-size: 32px;
+                letter-spacing: -2px;
+                color: rgb(255, 255, 255);
+                font-family: "Montserrat";
+                font-weight: bold;
+                text-transform: uppercase;
+                span {
+                    color: $button-color-green;
+                }
+            }
+            p {
+                width: 60%;
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: rgb(204, 204, 204);
+                font-family: "Roboto Slab";
+                margin: 45px 0 0 0;
+            }
+            ul {
+                list-style: none;
+                margin: 30px 0 58px 0;
+                li {
+                    background: url(../images/Checkmark-3.png) no-repeat 0 0;
+                    margin: 0 0 10px -35px;
+                    padding: 6px 0 0 50px;
+                    font-size: 16px;
+                    letter-spacing: 0px;
+                    color: rgb(204, 204, 204);
+                    font-family: "Roboto Slab";
+                    height: 31px;
+                }
+            }
+            button {
+                margin: 0 0 100px 0;
+                width: 168px;
+                height: 60px;
+                border-radius: 30px;
+                background-color: #7bc575;
+                font-size: 15px;
+                letter-spacing: 0px;
+                line-height: 43px;
+                color: rgb(255, 255, 255);
+                font-family: "Montserrat";
+                font-weight: bold;
+                text-align: center;
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.7);
+                text-transform: uppercase;
+            }
+        }
+    }
+    .section__title {
+        font-size: 32px;
+        letter-spacing: -2px;
+        line-height: 60px;
+        color: rgb(34, 34, 34);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 900;
+        text-align: center;
+        text-transform: uppercase;
+        margin: 100px 0 20px 0;
+    }
+    
+    .section__subtitle {
+        font-size: 16px;
+        letter-spacing: 0px;
+        color: rgb(119, 119, 119);
+        font-family: "Roboto Slab";
+        text-align: center;
+        margin: 25px 10px;
+    }
+    
+
+}
+
+@media screen and (max-width: 440px) {
+    header {
+        height: 80px;
+        .navigation {
+            margin-top: 80px;
+        }
+        a.headerLogo {
+            display: flex;
+            align-self: flex-start;
+            align-items: center;
+            justify-content: flex-start;
+            height: 29px;
+            width: 143px;
+            margin: 5% 0 0 3%;
+            padding: 5px;
+            text-decoration: none;
+            p.headerLogo__text {
+                font-size: 22px;
+                letter-spacing: 0px;
+                line-height: 41px;
+                color: rgb(85, 85, 85);
+                font-family: 'Montserrat', sans-serif;
+                font-weight: bold;
+                text-transform: uppercase;
+            }
+            .headerLogo__image {
+                margin: 0 5px 0 0;
+                width: 48px;
+                height: 30px; //0,933333
+            }
+        }
+    }
+    
+    .section1 {
+        h1 {
+            font-size: 36px;
+        }
+    }
+    .articlesTitle {
+        margin-bottom: 25px;
+    }
+
+    .section4 {
+        min-height: 800px;
+        
+        article {
+            width: 90%; // 430px : 1400px =0,3071
+            margin: 100px 10px;
+            h4 {
+                font-size: 18px;
+                letter-spacing: 0px;
+                color: rgb(34, 34, 34);
+                font-family: "Montserrat";
+                font-weight: bold;
+                text-transform: uppercase;
+                margin: 0 0 15px 0;
+            }
+            p {
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: rgb(119, 119, 119);
+                font-family: "Roboto Slab";
+                margin: 0 0 25px 0;
+            }
+            // need to find out how to align in flex display
+            ul {
+                // Need to remove this code and change to flex display
+                margin: 0 0 0 -40px;
+                li {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    margin: 0 0 20px 0;
+                    img {
+                        min-width: 68px;
+                        height: auto;
+                        margin: 0 20px 0 0;
+                    }
+                    span {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        padding: 0 0 0 0;
+                        h5 {
+                            font-size: 18px;
+                            letter-spacing: 0px;
+                            color: rgb(34, 34, 34);
+                            font-family: "Montserrat";
+                            font-weight: bold;
+                            margin: 0 0 3px 0;
+                        }
+                        p {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+            a {
+                font-size: 16px;
+                letter-spacing: 0px;
+                color: rgb(124, 197, 118);
+                font-family: "Montserrat";
+                font-weight: bold;
+                text-decoration: none;
+                text-transform: uppercase;
+                img {
+                    margin: 0 0 0 7px;
+                    height: 15px;
+                    width: auto;
+                }
+            }
+        }
+    }
+    
+        
 }
